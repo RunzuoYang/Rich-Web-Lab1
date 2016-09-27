@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by RunzuoYang (http://jsbin.com/lujuqa/6/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My caculator</title>
+</head>
+  <base href="<%=basePath%>">    
+    <title>My caculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+     <style id="jsbin-css">
+body{
+    font-size:12px;  
+    font-family:"Verdana";
+    color:#666;
+    }
+*{  
+    padding:0px;
+    margin:0px;   
+}
+#cac{   
+    width:670px;
+    height:500px;
+    border:5 solid #fff;
+    background:#f2f2f2;
+    margin:0 auto;
+    padding:10px;
+}
+#cac .c_show .s_text{
+    width:650px;
+    height:42px;
+    border:5 solid #fff;
+    line-height:42px;
+    text-align:right;
+    padding-right:20px;
+    font-size:34px;
+    color:black;
+}
+#cac h2{    
+    font-size:16px;
+    color:#000;
+    font-weight:500;
+    padding:12px 0 12px 20px;
+    cursor:move;
+}
+#cac .c_key ul{ 
+    border:3px solid #fff;
+    overflow:auto;
+    margin:10px auto;
+}
+#cac .c_key ul li{  
+    float:left;
+    width:140px;
+    height:65px;
+    background:#A9A9A9;
+    margin:11px;
+    text-align:center;
+    line-height:65px;
+    font-size:32px;
+    cursor:pointer;
+    list-style:none;
+    border:1px solid #fff;
+}
+#cac .c_key ul .c_tool{ 
+    background:#A9A9A9;
+    color:#666;
+}
+#cac .c_key ul .c_result{   
+    background:#A9A9A9;
+    color:#666;
+}
+#cac .c_key ul li:hover{    
+    background:#f90;
+    color:black;
+}
+</style>
+</head>
+<body>
+<div id="cac">
+
+        <h1>caculator</h1>
+        <div class="c_show">
+            <input type="text" class="s_text" onfocus="this.blur();" value="0" id="result">
+        </div>
+        <div class="c_key">
+            <ul>
+              <li class="c_tool" onclick="tools('(','g')">(</li>
+              <li class="c_tool" onclick="tools(')','g')">)</li>
+              <li class="c_tool" onclick="tools('±','g')">±</li>
+              <li class="c_tool" onclick="tools('/','g')">÷</li>
+              
+              
+              <li onclick="command(7);">7</li>
+              <li onclick="command(8);">8</li>
+              <li onclick="command(9);">9</li>
+              <li class="c_tool" onclick="tools('*','g')">×</li>
+              
+              
+              <li onclick="command(4);">4</li>
+              <li onclick="command(5);">5</li>
+              <li onclick="command(6);">6</li>
+              <li class="c_tool" onclick="tools('-','g');">-</li>
+             
+              
+             <li onclick="command(1);">1</li>
+             <li onclick="command(2);">2</li>
+             <li onclick="command(3);">3</li>
+             <li class="c_tool" onclick="tools('+','g');">+</li>
+             
+              
+              <li onclick="command(0);">0</li>
+              <li onclick="dot('g')">.</li>
+              <li class="c_tool" onclick="clearzero('j')">c</li>
+              <li class="c_result" onclick="equal('j');">=</li>
+              
+            </ul>
+        </div>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by RunzuoYang (http://jsbin.com/hetedo/8/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HCG</title>
+</head>
+
+  <body>
+    <h1>Hypothetical Checkout Page</h1>
+    <form>
+      <fieldset>
+        <legend><h2>Information</h2></legend>
+        <p>
+          <label><h3>Name</label>
+          <input type = "name"
+                 id = "myname"
+                  placeholder="First name / Surname"
+                 />
+        </p>
+        <p>
+          <label><h3>Password</label>
+           <input type = "password"
+                  id = "myPwd"
+                  placeholder="please enter eight number"
+                  />
+        </p>
+        <p>
+          <label><h3>Note</label>
+          <textarea> hello world</textarea>
+        </p>
+       
+      </fieldset>
+    </form>
+    
+     <form>
+      <fieldset>
+        <legend><h2>Select</h2></legend>
+       
+    <style>
+        input[type='radio'].radio {opacity:0; display:inline-block; height:20px; }
+        label.radio {background:url(imgs/radio_check.png) no-repeat; height:20px; padding-left:25px;}
+        input[type='radio'].radio:checked + .radio {background:url(imgs/radio_checked.png) no-repeat;}
+    </style>
+</head>
+<body>
+  <label><h3>Gender:</h3></label>
+    <input type="radio" name="gender" id="x" value="X"><label for="x">Male</label>
+    <input type="radio" name="gender" id="y" value="M"><label for="y">Female</label><br>
+  
+  <label><h3>Balance:</h3></label>
+ <label><input name="Balance" type="checkbox"/>€100</label>
+<label><input name="Balance" type="checkbox" />€300</label>
+<label><input name="Balance" type="checkbox" />€500</label>
+<label><input name="Balance" type="checkbox" />€700</label>
+<label><input name="Balance" type="checkbox" />more</label>
+</form>
+  <label><h3>Job:</label>
+    <select>  
+    
+    <option value="1">Teacher</option>  
+    <option value="2">Student</option>  
+    <option value="3">Doctor</option>  
+    <option value="4">Engineer</option>
+    <option value="5">Lawyer</option>
+    <option value="6">Others...</option>
+      
+   
+</select>  
+  </fieldset>
+       
+    </form>
+    <form>
+      <fieldset>
+        <legend><h2>Buttons</h2></legend>
+       
+        <button type="submit" value="Submit" onclick="login()"/>Submit</button>
+        <button type="submit" value="Cancel" onclick="login()"/>Cancel</button>
+        
+  </fieldset>
+       
+    </form>
+   
+   
+            
+  </body>
+
+</html>
